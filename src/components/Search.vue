@@ -2,52 +2,52 @@
 	<div class="Search">
 		<form>
 			<input 
-				type="text" 
 				placeholder="Montagne jeunesse" 
-				class="text"
-				@click="handleFocus()"
-			>
-			<span 
-				class="iconfont btn"
-				@click="handleFocus()"
-			>&#xe624;</span>
+				type="text" 
+				class="text" 
+				@click="toClick()"
+				/>
+			<span class="iconfont btn">&#xe699;</span>
 		</form>
 	</div>
 </template>
+
 <script>
 	export default {
-		name:"Search",
+		name: "Search",
 		methods:{
-			handleFocus(){
+			toClick(){
 				this.$router.push('SearchPage')
 			}
 		}
 	}
 </script>
+
 <style scoped>
-.Search form{
-	width: 516px;
-	height: 62px;
-	border-radius: 12px;
-	overflow: hidden;
-	opacity: 0.7;
-	display: block;
-	margin: 0 auto;
-}
-.Search form .text{
-	width: 434px;
-	height: inherit;
-	float: left;
-	padding-left: 22px;
-	font-size: 28px;
-}
-.Search form .btn{
-	width: 60px;
-	height: inherit;
-	float: left;
-	background: #fff;
-	text-align: left;
-	line-height: 62px;
-	font-size: 40px;
-}
+	
+	.Search form {
+		width: 516px;
+		height: 62px;
+		margin: 0 auto;
+		border-radius: 14px;
+		opacity: 0.7;
+		overflow: hidden;
+	}
+	
+	.Search form .text {
+		float: left;
+		width: 432px;
+		padding-left: 24px;
+		height: inherit;
+	}
+	
+	.Search form .btn {
+		float: left;
+		background: #fff;
+		width: 60px;
+		height: 62px;
+		line-height: 62px;
+		font-size: 42px;
+		text-align: left;
+	}
 </style>

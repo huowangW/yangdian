@@ -6,5 +6,3 @@ MyPlugin.install = function(Vue){
 	Vue.component("MenuBar",MenuBar)
 }
 export default MyPlugin
-
-

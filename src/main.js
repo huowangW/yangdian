@@ -4,6 +4,7 @@ import router from './router'
 import global_menuBar from './plugins/global_menuBar.js'
 import 'lib-flexible/flexible.js'
 
+
 import './style/common.css'
 import './style/iconfont.css'
 

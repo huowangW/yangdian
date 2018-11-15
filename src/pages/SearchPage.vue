@@ -1,22 +1,26 @@
 <template>
 	<div class="SearchPage">
-		<button @click="handleReturn()">返回</button>
+		<button @click="Return()">返回</button>
 		<Search></Search>
-		我是搜索页
+		我是搜索页面。
 	</div>
+	
 </template>
+
 <script>
-	import Search from '.././components/Search.vue'
+	import Search from '.././components/search.vue'
 	export default {
 		name:"SearchPage",
 		components:{
 			Search
 		},
 		methods:{
-			handleReturn(){
+			Return(){
 				this.$router.go(-1)
 			}
 		}
 	}
 </script>
-<style scoped></style>
+
+<style scoped>
+</style>

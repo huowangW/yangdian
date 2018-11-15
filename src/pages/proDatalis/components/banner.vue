@@ -22,13 +22,13 @@
 			return {
 				imgList: [{
 					id: 0,
-					img: require('@/images/home/banner1.jpg')
+					img: require('@/images/proDatalis/banner.png')
 				}, {
 					id: 1,
-					img: require('@/images/home/banner1.jpg')
+					img: require('@/images/proDatalis/banner.png')
 				}, {
 					id: 2,
-					img: require('@/images/home/banner1.jpg')
+					img: require('@/images/proDatalis/banner.png')
 				}],
 				swiperOption:{
 					pagination: {
@@ -54,16 +54,21 @@
 <style scoped>
 	.Banner{
 		width: 750px;
-		height: 484px;
+		height: 542px;
 	}
 	.Banner img {
 		display: block;
 		width: 750px;
-		height: 484px;
+		height: 542px;
 	}
 	.Banner >>> .swiper-pagination-bullet{
 		width: 24px;
 		height: 24px;
 		display: inline-block;
+		background: #fff;
+		opacity: 1;
+	}
+	.Banner >>> .swiper-pagination-bullet-active{
+		background: #ff9900;
 	}
 </style>
